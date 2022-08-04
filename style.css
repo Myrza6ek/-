@@ -1,0 +1,148 @@
+/* псевдоклассы псевдоэлементы */
+/* hover-отрабатывает при наведении */
+
+/* div {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+} */
+
+/* div:hover {
+  background-color: yellow;
+  transition: 2s; 
+ } */
+/* псевдоклассы для ссылок */
+/* visited - подсвечивает посещенные ссылки */
+/* a:visited {
+  color: lime;
+} */
+/* active - подсвечивает ссылку в момент нажатия */
+/* a:active {
+  color: mediumblue;
+}
+.block {
+  background-color: seagreen;
+  width: 100px;
+  height: 100px;
+}
+.block:active {
+  background-color: hotpink;
+  transition: 1s;
+}
+
+ul {
+  list-style-type: none;
+} */
+/* div {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* first-child, nth-child(), last child - обращение только к некоторым элементам на странице*/
+
+/* li:first-child > div {
+  background-color: yellow;
+}
+
+li:nth-child(3) > div {
+  background-color: lime;
+}
+li:last-child > div {
+  background-color: blueviolet;
+} */
+/* ul {
+  list-style-type: disc;
+} 
+ul li::marker{
+  color: red;
+}*/
+
+/* input {
+  background-color: black;
+  border: 2px solid red;
+  border-radius: 10px;
+  color: red;
+  transition: 0.8s;
+} */
+
+/* focus - отрабатывет при фокусировке на элмнт */
+/* input:focus {
+  background-color: yellow;
+  transition: 0.8s;
+} */
+
+/* not  задает стили всему, что не содержит данный селектор */
+
+/* .div-1,
+.div-2 {
+  width: 100px;
+  height: 100px;
+  margin: 5px 0;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+div:not(.div-2) {
+  background-color: yellow;
+} */
+
+/* valid, invalid проверка данных в инпуте */
+/* input:valid { */
+/* проверка на правильность данных по типу */
+/* background-color: purple;
+} */
+/* если введены неправильные данные */
+/* input:invalid {
+  background-color: red;
+} */
+
+/* ПСЕВДОЭЛЕМЕНТЫ */
+/* h1::before {
+  content: "🦘";
+} */
+
+/* h1::after { - контент после основного контента
+  content: "World";
+} */
+
+/* selection - применяет стили к выделенным текстам */
+
+/* p::selection {
+  color: red;
+  background-color: black;
+} */
+
+/* first-letter */
+/* h1::first-letter {
+  color: red;
+  font-size: 55px;
+} */
+
+/* first-line */
+/* p::first-line {
+  color: lime;
+  font-size: 25px;
+} */
+p::before {
+  content: "🦘";
+}
+
+/* odd - применение стили к нечетным */
+/* even - к четным */
+
+/* li:nth-child(even) {
+  color: red;
+} */
+
+li:nth-child(4n) {
+  color: aqua;
+}
